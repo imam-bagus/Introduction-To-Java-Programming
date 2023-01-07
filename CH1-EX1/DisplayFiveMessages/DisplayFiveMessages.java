@@ -1,7 +1,9 @@
-public class DisplayFiveMessages
-{
-    public static void main(String[] args)
-    {
+/**
+ * Write a program that displays "Hello World" five times
+ */
+
+public class DisplayFiveMessages {
+    public static void main(String[] args) {
         System.out.println("Hello World");
         System.out.println("Hello World");
         System.out.println("Hello World");

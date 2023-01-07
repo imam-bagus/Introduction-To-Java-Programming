@@ -1,5 +1,9 @@
-public class PrintATable{
-    public static void main(String[] args){
+/**
+ * Write a program that displays the following table:
+ */
+
+public class PrintATable {
+    public static void main(String[] args) {
         System.out.println("a   a^2    a^3");
         System.out.println("1   1      1");
         System.out.println("2   4      8");
