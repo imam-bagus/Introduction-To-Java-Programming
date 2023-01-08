@@ -1,5 +1,7 @@
 package org.NBI.IntroductionToJavaProgramming;
+
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -25,7 +27,9 @@ public class Main {
         System.out.println("byte value :" + byteValue);
         System.out.println("short value :" + shortValue);
         System.out.println("Integer value :" + integerValue);
+        System.out.println("Long value :" + longValue);
         System.out.println("float value :" + floatValue);
         System.out.println("double value :" + doubleValue);
+        input.close();
     }
 }
