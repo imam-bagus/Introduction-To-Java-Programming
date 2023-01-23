@@ -19,7 +19,6 @@ public class FindCharacterOfAnASCIICode {
     CodeASCII = (int) userCharacter;
 
     System.out.println(
-      "The ASCII code for character " + userCharacter + " is " + CodeASCII
-    );
+        "The ASCII code for character " + userCharacter + " is " + CodeASCII);
   }
 }

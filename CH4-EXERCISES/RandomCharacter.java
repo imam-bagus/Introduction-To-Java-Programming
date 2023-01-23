@@ -10,7 +10,6 @@ public class RandomCharacter {
     char lowerCaseLetter = (char) code;
 
     System.out.print(
-      "Letter is " + lowerCaseLetter + " and code value is " + code
-    );
+        "Letter is " + lowerCaseLetter + " and code value is " + code);
   }
 }

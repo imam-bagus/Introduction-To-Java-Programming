@@ -14,7 +14,6 @@ public class PhoneKeyPads {
     Scanner input = new Scanner(System.in);
     String l;
     char letter;
-    char letterUpperCase;
 
     System.out.print("Enter a letter:");
     l = input.nextLine();
@@ -30,15 +29,11 @@ public class PhoneKeyPads {
       System.out.print("The coressponding number is " + 5);
     } else if (letter == 'M' || letter == 'N' || letter == 'O') {
       System.out.print("The coressponding number is " + 6);
-    } else if (
-      letter == 'P' || letter == 'Q' || letter == 'R' || letter == 'S'
-    ) {
+    } else if (letter == 'P' || letter == 'Q' || letter == 'R' || letter == 'S') {
       System.out.print("The coressponding number is " + 7);
     } else if (letter == 'T' || letter == 'U' || letter == 'V') {
       System.out.print("The coressponding number is " + 8);
-    } else if (
-      letter == 'w' || letter == 'X' || letter == 'Y' || letter == 'Z'
-    ) {
+    } else if (letter == 'w' || letter == 'X' || letter == 'Y' || letter == 'Z') {
       System.out.print("The coressponding number is " + 9);
     } else {
       System.out.print(l + " is an invalid input");

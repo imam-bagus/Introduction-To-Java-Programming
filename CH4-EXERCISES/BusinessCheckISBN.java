@@ -1,3 +1,4 @@
+
 /*
 Rewrite Exercise CH3 by entering the ISBN number as a string.
  */
@@ -41,9 +42,7 @@ public class BusinessCheckISBN10 {
 
     digit9 = remainingDigit;
 
-    digit10 =
-      (
-        (digit1 * 1) +
+    digit10 = ((digit1 * 1) +
         (digit2 * 2) +
         (digit3 * 3) +
         (digit4 * 4) +
@@ -51,9 +50,8 @@ public class BusinessCheckISBN10 {
         (digit6 * 6) +
         (digit7 * 7) +
         (digit8 * 8) +
-        (digit9 * 9)
-      ) %
-      11;
+        (digit9 * 9)) %
+        11;
 
     System.out.print("The ISBN-10 number is " + digit1 + ISBN);
     if (digit10 == 10) {
