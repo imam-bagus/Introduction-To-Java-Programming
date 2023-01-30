@@ -12,8 +12,8 @@ For example, 5 / 4 is 1 (not 1.25) and 10 / 4 is 2 (not 2.5). To get an accurate
 
 import java.util.Scanner;
 
-public class PopulationProjection{
-    public static void main(String[] args){
+public class PopulationProjection {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int currentPopulation = 312032486;
         int secondOneYear = 31536000;

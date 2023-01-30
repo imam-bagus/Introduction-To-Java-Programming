@@ -9,24 +9,24 @@ import java.util.Scanner;
 
 public class DisplayIntegerReversed {
 
-  public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-    System.out.print("Enter Integer:");
-    int number = input.nextInt();
+        System.out.print("Enter Integer:");
+        int number = input.nextInt();
 
-    System.out.println("Before:" + number);
-    System.out.println("After:" + reverse(number));
-  }
+        System.out.println("Before:" + number);
+        System.out.println("After:" + reverse(number));
+    }
 
-  public static int reverse(int num) {
-    String result = "";
+    public static int reverse(int num) {
+        String result = "";
 
-    do {
-      result += num % 10;
-      num /= 10;
-    } while (num != 0);
+        do {
+            result += num % 10;
+            num /= 10;
+        } while (num != 0);
 
-    return Integer.parseInt(result);
-  }
+        return Integer.parseInt(result);
+    }
 }

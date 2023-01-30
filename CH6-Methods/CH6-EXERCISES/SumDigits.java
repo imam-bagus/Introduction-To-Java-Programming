@@ -10,25 +10,25 @@ import java.util.Scanner;
 
 public class SumDigits {
 
-  public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-    System.out.print("Enter an integer:");
-    int num = input.nextInt();
+        System.out.print("Enter an integer:");
+        int num = input.nextInt();
 
-    System.out.println("Sum each digit :" + sumDigits(num));
-  }
+        System.out.println("Sum each digit :" + sumDigits(num));
+    }
 
-  public static int sumDigits(long n) {
-    int sum = 0, extractor = 10;
-    long digit = 0;
+    public static int sumDigits(long n) {
+        int sum = 0, extractor = 10;
+        long digit = 0;
 
-    do {
-      digit = n % extractor;
-      sum += digit;
-      n = n / extractor;
-    } while (n != 0);
+        do {
+            digit = n % extractor;
+            sum += digit;
+            n = n / extractor;
+        } while (n != 0);
 
-    return sum;
-  }
+        return sum;
+    }
 }

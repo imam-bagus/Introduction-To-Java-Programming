@@ -19,7 +19,7 @@ public class HealthApplicationComputeBMI {
         System.out.print("Enter height in inches: ");
         heightInches = input.nextDouble();
 
-        BMI = weightPounds * 0.45359237 / (heightInches *  0.0254 * heightInches * 0.0254);
+        BMI = weightPounds * 0.45359237 / (heightInches * 0.0254 * heightInches * 0.0254);
 
         System.out.print("BMI is " + BMI);
     }

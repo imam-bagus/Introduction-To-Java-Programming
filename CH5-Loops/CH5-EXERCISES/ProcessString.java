@@ -6,19 +6,19 @@ import java.util.Scanner;
 
 public class ProcessString {
 
-  public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
-    String str, newStr = "";
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String str, newStr = "";
 
-    System.out.print("Enter string:");
-    str = input.nextLine();
+        System.out.print("Enter string:");
+        str = input.nextLine();
 
-    for (int i = 0; i < str.length(); i++) {
-      if ((i + 1) % 2 == 0) {
-        newStr += str.charAt(i);
-      }
+        for (int i = 0; i < str.length(); i++) {
+            if ((i + 1) % 2 == 0) {
+                newStr += str.charAt(i);
+            }
+        }
+
+        System.out.print(newStr);
     }
-
-    System.out.print(newStr);
-  }
 }

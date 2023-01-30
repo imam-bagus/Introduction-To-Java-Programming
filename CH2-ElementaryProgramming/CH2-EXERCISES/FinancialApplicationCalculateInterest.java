@@ -8,8 +8,8 @@ Write a program that reads the balance and the annual percentage interest rate a
 
 import java.util.Scanner;
 
-public class FinancialApplicationCalculateInterest{
-    public static void main(String[] args){
+public class FinancialApplicationCalculateInterest {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         float balance;
         float annualInterestRate;
@@ -19,7 +19,7 @@ public class FinancialApplicationCalculateInterest{
         balance = input.nextFloat();
         annualInterestRate = input.nextFloat();
 
-        interest = balance * (annualInterestRate/1200);
+        interest = balance * (annualInterestRate / 1200);
 
         System.out.print("The interest is " + interest);
     }

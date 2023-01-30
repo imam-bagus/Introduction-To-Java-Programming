@@ -6,33 +6,33 @@ import java.util.Scanner;
 
 public class ConvertLetterGradeToNumber {
 
-  public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
-    String l;
-    char grade;
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String l;
+        char grade;
 
-    System.out.print("Enter a letter grade :");
-    l = input.nextLine();
-    grade = l.charAt(0);
+        System.out.print("Enter a letter grade :");
+        l = input.nextLine();
+        grade = l.charAt(0);
 
-    switch (grade) {
-      case 'A':
-        System.out.print("The numeric value for grade " + grade + " is " + 4);
-        break;
-      case 'B':
-        System.out.print("The numeric value for grade " + grade + " is " + 3);
-        break;
-      case 'C':
-        System.out.print("The numeric value for grade " + grade + " is " + 2);
-        break;
-      case 'D':
-        System.out.print("The numeric value for grade " + grade + " is " + 1);
-        break;
-      case 'F':
-        System.out.print("The numeric value for grade " + grade + " is " + 0);
-        break;
-      default:
-        System.out.print(grade + " is an invalid grade");
+        switch (grade) {
+            case 'A':
+                System.out.print("The numeric value for grade " + grade + " is " + 4);
+                break;
+            case 'B':
+                System.out.print("The numeric value for grade " + grade + " is " + 3);
+                break;
+            case 'C':
+                System.out.print("The numeric value for grade " + grade + " is " + 2);
+                break;
+            case 'D':
+                System.out.print("The numeric value for grade " + grade + " is " + 1);
+                break;
+            case 'F':
+                System.out.print("The numeric value for grade " + grade + " is " + 0);
+                break;
+            default:
+                System.out.print(grade + " is an invalid grade");
+        }
     }
-  }
 }

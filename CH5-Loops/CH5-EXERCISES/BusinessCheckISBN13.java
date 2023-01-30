@@ -10,34 +10,34 @@ import java.util.Scanner;
 
 public class BusinessCheckISBN13 {
 
-  public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
-    String ISBN;
-    int length, checksum = 0;
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String ISBN;
+        int length, checksum = 0;
 
-    System.out.print("Enter first 12 digit of an ISBN-13 :");
-    ISBN = input.nextLine();
+        System.out.print("Enter first 12 digit of an ISBN-13 :");
+        ISBN = input.nextLine();
 
-    length = ISBN.length();
+        length = ISBN.length();
 
-    if (ISBN.length() != 12) {
-      System.out.println(ISBN + " is an invalid input");
-    } else {
-      for (int i = 0; i < length; i++) {
-        if ((i + 1) % 2 == 0) {
-          checksum += (ISBN.charAt(i) - '0') * 3;
+        if (ISBN.length() != 12) {
+            System.out.println(ISBN + " is an invalid input");
         } else {
-          checksum += (ISBN.charAt(i) - '0') * 1;
-        }
-      }
-      checksum %= 10;
-      checksum = 10 - checksum;
+            for (int i = 0; i < length; i++) {
+                if ((i + 1) % 2 == 0) {
+                    checksum += (ISBN.charAt(i) - '0') * 3;
+                } else {
+                    checksum += (ISBN.charAt(i) - '0') * 1;
+                }
+            }
+            checksum %= 10;
+            checksum = 10 - checksum;
 
-      if (checksum == 10) {
-        System.out.println("The ISBN-13 number is " + ISBN + "0");
-      } else {
-        System.out.println("The ISBN-13 number is " + ISBN + checksum);
-      }
+            if (checksum == 10) {
+                System.out.println("The ISBN-13 number is " + ISBN + "0");
+            } else {
+                System.out.println("The ISBN-13 number is " + ISBN + checksum);
+            }
+        }
     }
-  }
 }

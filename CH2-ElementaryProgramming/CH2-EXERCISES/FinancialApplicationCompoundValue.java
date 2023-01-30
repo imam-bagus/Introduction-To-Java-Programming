@@ -9,29 +9,29 @@ Write a program that prompts the user to enter a monthly saving amount and displ
 
 import java.util.Scanner;
 
-public class FinancialApplicationCompoundValue{
-    public static void main(String[] args){
+public class FinancialApplicationCompoundValue {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         double accountValue;
 
         System.out.print("Enter the monthly saving amount: ");
         double monthlySavingAmount = input.nextDouble();
-        
+
         accountValue = monthlySavingAmount * (1 + 0.003125);
         System.out.println("After the first month, the account value is " + accountValue);
-        
+
         accountValue = (accountValue + monthlySavingAmount) * (1 + 0.003125);
         System.out.println("After the Second month, the account value is " + accountValue);
-        
+
         accountValue = (accountValue + monthlySavingAmount) * (1 + 0.003125);
         System.out.println("After the third month, the account value is " + accountValue);
-        
+
         accountValue = (accountValue + monthlySavingAmount) * (1 + 0.003125);
         System.out.println("After the Four month, the account value is " + accountValue);
-        
+
         accountValue = (accountValue + monthlySavingAmount) * (1 + 0.003125);
         System.out.println("After the Five month, the account value is " + accountValue);
-        
+
         accountValue = (accountValue + monthlySavingAmount) * (1 + 0.003125);
         System.out.println("After the sixth month, the account value is " + accountValue);
 

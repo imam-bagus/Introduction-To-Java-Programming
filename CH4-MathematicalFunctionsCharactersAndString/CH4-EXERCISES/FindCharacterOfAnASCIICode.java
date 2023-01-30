@@ -6,19 +6,19 @@ import java.util.Scanner;
 
 public class FindCharacterOfAnASCIICode {
 
-  public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
-    String c;
-    char userCharacter;
-    int CodeASCII;
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String c;
+        char userCharacter;
+        int CodeASCII;
 
-    System.out.print("Enter a character:");
-    c = input.nextLine();
-    userCharacter = c.charAt(0);
+        System.out.print("Enter a character:");
+        c = input.nextLine();
+        userCharacter = c.charAt(0);
 
-    CodeASCII = (int) userCharacter;
+        CodeASCII = (int) userCharacter;
 
-    System.out.println(
-        "The ASCII code for character " + userCharacter + " is " + CodeASCII);
-  }
+        System.out.println(
+                "The ASCII code for character " + userCharacter + " is " + CodeASCII);
+    }
 }

@@ -4,8 +4,8 @@ Rewrite Exercise CH1 to prompt the user to enter the number of years and display
 
 import java.util.Scanner;
 
-public class PopulationProjection{
-    public static void main(String[] args){
+public class PopulationProjection {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int currentPopulation = 312032486;
         int secondOneYear = 31536000;

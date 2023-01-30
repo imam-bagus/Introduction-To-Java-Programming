@@ -6,29 +6,29 @@ import java.util.Scanner;
 
 public class GameHeadsOrTails {
 
-  public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-    int coin = (int) (Math.random() * 2);
+        int coin = (int) (Math.random() * 2);
 
-    System.out.print("Enter a guess (0 for head or 1 for tail):");
-    int guess = input.nextInt();
+        System.out.print("Enter a guess (0 for head or 1 for tail):");
+        int guess = input.nextInt();
 
-    boolean match = (coin == guess) ? true : false;
+        boolean match = (coin == guess) ? true : false;
 
-    System.out.print("Flip coin result ");
-    if (coin == 0) {
-      System.out.print("head");
-    } else {
-      System.out.print("tail");
+        System.out.print("Flip coin result ");
+        if (coin == 0) {
+            System.out.print("head");
+        } else {
+            System.out.print("tail");
+        }
+
+        System.out.print(", Your guess is ");
+
+        if (match) {
+            System.out.print("Correct");
+        } else {
+            System.out.print("Incorrect");
+        }
     }
-
-    System.out.print(", Your guess is ");
-
-    if (match) {
-      System.out.print("Correct");
-    } else {
-      System.out.print("Incorrect");
-    }
-  }
 }
