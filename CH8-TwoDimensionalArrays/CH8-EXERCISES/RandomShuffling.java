@@ -23,7 +23,7 @@ public class RandomShuffling {
     for (int row = 0; row < table.length; row++) {
       for (int column = 0; column < table[row].length; column++) {
         rowRand = (int) (Math.random() * column[row].length);
-        colRand = (int) (Math.random() * column[row].length);
+        colRand = (int) (Math.random() * column[column].length);
 
         temp = table[row][column];
         table[row][column] = table[rowRand][colRand];
